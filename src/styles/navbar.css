@@ -1,0 +1,22 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px 50px;
+}
+.navbar-logo img{
+    height: auto;
+    width: 130px;
+}
+.navbar-links ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-family: var(--font-text);
+}
+.navbar-links ul li a{
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+    text-transform: capitalize;
+}
