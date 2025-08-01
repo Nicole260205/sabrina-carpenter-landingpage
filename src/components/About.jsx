@@ -1,4 +1,5 @@
 import "../styles/about.css";
+import paper from "../assets/paper-tear.png";
 import kiss1 from "../assets/kiss1.png";
 import kiss2 from "../assets/kiss2.png";
 import note1 from "../assets/note1.png";
@@ -25,6 +26,7 @@ function About() {
           </p>
         </div>
       </div>
+      
     </>
   );
 }
