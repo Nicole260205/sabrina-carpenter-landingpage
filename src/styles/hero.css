@@ -63,12 +63,13 @@
 }
 .paper-tear {
   position: absolute;
-  top: 80%;
+  top: 84%;
   left: 0;
   width: 100%;
   height: auto;
   z-index: 5;
   pointer-events: none;
+  margin-bottom: 0;
 }
 @media (max-width: 768px) {
   .hero-section {
@@ -76,6 +77,7 @@
     padding: 0rem 0rem;
     align-items: center;
     text-align: center;
+    position: relative; /* necessário pro botão se posicionar em relação a essa seção */
   }
 
   .hero-content {
@@ -85,10 +87,16 @@
 
   .name {
     font-size: 4rem;
+    margin: 0 0 1rem 0;
   }
 
   .cta {
-    margin: 1rem 0 0 0;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    z-index: 4;
   }
 
   .hero-image-wrapper {
@@ -103,7 +111,11 @@
 
   .paper-tear {
     position: relative;
-    top: 0;
-    margin-top: -30px; /* coladinho na imagem */
+    width: 100%;
+    height: auto;
+    z-index: 5;
+    pointer-events: none;
+    margin-top: -990px;
+    margin-bottom: -50px;
   }
 }
