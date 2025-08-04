@@ -78,7 +78,8 @@
     padding: 0rem 0rem;
     align-items: center;
     text-align: center;
-    position: relative; /* necessário pro botão se posicionar em relação a essa seção */
+    position: relative; 
+    padding-top: 160px;
   }
 
   .hero-content {
