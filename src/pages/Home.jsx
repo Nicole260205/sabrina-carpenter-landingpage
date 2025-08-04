@@ -7,7 +7,7 @@ function Home() {
     <>
       <Hero />
       <About />
-      <Footer />
+      
     </>
   );
 }
