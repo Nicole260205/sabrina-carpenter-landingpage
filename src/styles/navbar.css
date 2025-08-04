@@ -1,14 +1,18 @@
-.navbar{
-    display: flex;
-    align-items: center;
-    padding: 10px 50px;
-    position: relative;
-    background-color: var(--highlight-gold);
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px 50px;
+  position: absolute; /* Aqui, em vez de fixed */
+  top: 0;
+  left: 0;
+  background-color: transparent; /* Deixa o fundo transparente */
+  z-index: 1000;
 }
 
 .navbar-logo img{
     height: auto;
-    width: 130px;
+    width: 80px;
+    margin-top: 20px;
 }
 
 .navbar-links ul{
@@ -21,7 +25,7 @@
 
 .navbar-links ul li a{
     text-decoration: none;
-    color: var(--text-dark);
+    color: white;
     font-weight: 600;
     text-transform: capitalize;
 }
@@ -38,51 +42,72 @@
 
 /* Responsive styles */
 @media (max-width: 768px) {
-    .navbar {
-        padding: 10px 20px;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    }
-    
-    .navbar-logo {
-        text-align: center;  
-        top: 20px
-    }
-    .navbar-logo img{
-        width: 90px; 
-        height: auto; 
-    }
-    
-    .hamburger {
-        display: block;
-        position: absolute;
-        right: 20px;
-        top: 40px;
-    }
-    
-    .navbar-links {
-        position: absolute;
-        top: 70%;
-        left: 0;
-        width: 100%;
-        background-color: var(--light-bg); 
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
-        z-index: 1000;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease-out;
-    }
-    
-    .navbar-links.active {
-        max-height: 300px;
-    }
-    
-    .navbar-links ul {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 0;
-        gap: 15px;
-    }
+  .navbar {
+    padding: 10px 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 90%;
+    background-color: transparent; /* transparente */
+    z-index: 999;
+  }
+
+  .navbar-logo {
+    text-align: center;
+    top: 20px;
+  }
+
+  .navbar-logo img {
+    width: 90px;
+    height: auto;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 40px;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 100%; /* para o menu abrir logo abaixo da navbar */
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.85); /* leve fundo branco transparente */
+    backdrop-filter: blur(5px); /* vidro fosco */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 998;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+
+  .navbar-links.active {
+    max-height: 300px;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 15px;
+  }
+
+  .navbar-links ul li a {
+    text-decoration: none;
+    color: var(--main-bg); /* sua cor principal */
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  .hamburger {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 40px;
+  color: white; /* <-- AQUI define a cor branca */
+  z-index: 1001; /* garantir que fique acima do menu aberto */
+}
 }

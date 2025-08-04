@@ -1,11 +1,10 @@
-import React from 'react'
-
+import Hero_Discograpy from "../components/Hero_Discograpy";
 function Discography() {
   return (
-    <div>
-      
-    </div>
-  )
+    <>
+      <Hero_Discograpy />
+    </>
+  );
 }
 
 export default Discography

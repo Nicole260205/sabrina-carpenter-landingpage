@@ -19,24 +19,4 @@ html, body {
   margin: 0;
   padding: 0;
 }
-.paper-tear {
-  position: absolute;
-  top: 84%;
-  left: 0;
-  width: 100%;
-  height: auto;
-  z-index: 5;
-  pointer-events: none;
-  margin-bottom: 0;
-}
-@media (max-width: 768px) {
-    .paper-tear {
-    position: relative;
-    width: 100%;
-    height: auto;
-    z-index: 5;
-    pointer-events: none;
-    margin-top: -990px;
-    margin-bottom: -50px;
-  }
-}
+

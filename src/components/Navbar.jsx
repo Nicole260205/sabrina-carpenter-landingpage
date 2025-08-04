@@ -1,4 +1,4 @@
-import logo from "../assets/logo.png";
+import logo from "../assets/logo_nav.png";
 import "../styles/navbar.css";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
