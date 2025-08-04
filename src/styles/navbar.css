@@ -3,6 +3,7 @@
     align-items: center;
     padding: 10px 50px;
     position: relative;
+    background-color: var(--highlight-gold);
 }
 
 .navbar-logo img{
