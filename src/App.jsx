@@ -5,7 +5,7 @@ import Discography from "./pages/Discography";
 import MusicVideos from "./pages/MusicVideos";
 import Shop from "./pages/Shop";
 import Contact from "./pages/Contact";
-import Footer from "./components/Footer";
+import AlbumDetail from "./pages/AlbumDetail"; 
 
 function App() {
   return (
@@ -14,11 +14,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/discography" element={<Discography />} />
+        <Route path="/albums/:id" element={<AlbumDetail />} />
         <Route path="/music-videos" element={<MusicVideos />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer />
     </Router>
   );
 }

@@ -31,7 +31,7 @@
 }
 
 .navbar-links ul li a:hover{
-    color: var(--main-bg);
+    color: var(--accent-red);
 }
 
 .hamburger {

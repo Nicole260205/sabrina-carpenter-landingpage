@@ -1,0 +1,66 @@
+.discography-title {
+  text-align: center;
+  font-family: "Birds of Paradise", cursive;
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--main-bg);
+}
+
+.album-grid {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 18px;
+  justify-items: center;
+  width: 60%;
+  margin: 0 auto;
+  font-family: var(--font-text);
+}
+
+.album-card {
+  text-align: center;
+  width: 180px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.album-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.album-info {
+  max-width: 600px;
+  text-align: center;
+  margin-top: 20px;
+}
+.discography-page{
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5e7c4; 
+  height: 1350px;
+}
+.footer-album .paper-tear-footer{
+  top: -160px;
+}
+.footer-album .footer-content{
+  padding: 0 2rem 0 2rem;
+}
+@media (max-width: 992px) {
+  .album-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .discography-title {
+    font-size: 4rem;
+  }
+  .album-grid {
+    grid-template-columns: 1fr;
+  }
+}
