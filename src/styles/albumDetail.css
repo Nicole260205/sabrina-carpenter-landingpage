@@ -1,10 +1,10 @@
 .navbar-detail {
-  background-color: #234B9B;
-  width: 94.4vw;
+  background-color: #234b9b;
+  width: 100%;
   display: flex;
   align-items: center;
   padding: 20px 50px;
-  position: absolute; /* Aqui, em vez de fixed */
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -73,8 +73,11 @@
 .album-buttons a:hover {
   opacity: 0.8;
 }
-.footer-detail .paper-tear-footer{
+.footer-detail .paper-tear-footer {
   top: -160px;
+}
+.footer-detail .footer-content {
+  padding: 0;
 }
 
 /* Responsivo */
@@ -82,14 +85,21 @@
   .album-detail {
     flex-direction: column;
     text-align: center;
-    padding: 40px 20px;
+    padding: 250px 20px 120px 20px;
   }
 
   .album-info {
     margin-left: 0;
     margin-top: 40px;
   }
-
+  .album-detail img {
+    width: 300px;
+  }
+  .album-info h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: #193f66;
+}
   .album-buttons {
     justify-content: center;
     flex-wrap: wrap;
@@ -99,4 +109,7 @@
     width: 100%;
     max-width: 200px;
   }
+  .footer-detail .paper-tear-footer {
+  top: -33px;
+}
 }

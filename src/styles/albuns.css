@@ -62,4 +62,10 @@
   .album-grid {
     grid-template-columns: 1fr;
   }
+  .discography-page{
+    height: 3550px;
+  }
+  .footer-album .paper-tear-footer{
+  top: -33px;
+}
 }

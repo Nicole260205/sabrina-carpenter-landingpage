@@ -5,10 +5,12 @@ import MusicVideos from "./pages/MusicVideos";
 import Shop from "./pages/Shop";
 import Contact from "./pages/Contact";
 import AlbumDetail from "./pages/AlbumDetail"; 
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/discography" element={<Discography />} />
