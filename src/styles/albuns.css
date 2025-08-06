@@ -9,7 +9,7 @@
 
 .album-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
+  grid-template-columns: repeat(4, 1fr);
   gap: 18px;
   justify-items: center;
   width: 60%;
@@ -29,24 +29,23 @@
   border-radius: 10px;
 }
 
-
 .album-info {
   max-width: 600px;
   text-align: center;
   margin-top: 20px;
 }
-.discography-page{
+.discography-page {
   display: flex;
   margin: 0;
   flex-direction: column;
   align-items: center;
-  background-color: #f5e7c4; 
+  background-color: #f5e7c4;
   height: 1350px;
 }
-.footer-album .paper-tear-footer{
+.footer-album .paper-tear-footer {
   top: -160px;
 }
-.footer-album .footer-content{
+.footer-album .footer-content {
   padding: 0 2rem 0 2rem;
 }
 @media (max-width: 992px) {
@@ -60,12 +59,26 @@
     font-size: 4rem;
   }
   .album-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
   }
-  .discography-page{
-    height: 3550px;
+  .album-card {
+    width: 120px;
+    text-decoration: none;
+    color: inherit;
   }
-  .footer-album .paper-tear-footer{
-  top: -33px;
-}
+
+  .album-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .discography-page {
+    height: 1650px;
+  }
+  .footer-album .paper-tear-footer {
+    top: -33px;
+  }
 }

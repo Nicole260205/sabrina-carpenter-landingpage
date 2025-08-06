@@ -1,11 +1,12 @@
-import React from 'react'
-
+import Navbar from "../components/Navbar";
+import Hero_Video from "../components/Hero_Video";
 function MusicVideos() {
   return (
-    <div>
-      
-    </div>
-  )
+    <>
+      <Navbar extraClass="navbar-video" />
+      <Hero_Video />
+    </>
+  );
 }
 
 export default MusicVideos
