@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Discography from "./pages/Discography";
 import MusicVideos from "./pages/MusicVideos";
@@ -10,7 +9,6 @@ import AlbumDetail from "./pages/AlbumDetail";
 function App() {
   return (
     <Router>
-      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/discography" element={<Discography />} />
