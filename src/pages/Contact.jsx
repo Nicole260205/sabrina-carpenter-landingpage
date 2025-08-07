@@ -1,11 +1,16 @@
-import React from 'react'
+import ContactForm from "../components/ContactForm";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+
 
 function Contact() {
   return (
-    <div>
-      
-    </div>
-  )
+    <>
+      <Navbar extraClass="navbar-contact"/>
+      <ContactForm />
+      <Footer extraClass="footer-contact" />
+    </>
+  );
 }
 
 export default Contact

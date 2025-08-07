@@ -4,7 +4,7 @@ import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-function Navbar({ extraClass = "" }) {
+function Navbar({ extraClass = "", customLogo }) {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -12,7 +12,7 @@ function Navbar({ extraClass = "" }) {
     <div className={`navbar ${extraClass}`}>
       <div className="navbar-logo">
         <Link to="/">
-          <img src={logo} alt="Sabrina Carpenter's logo" />
+          <img src={customLogo || logo} alt="Sabrina Carpenter's logo" />
         </Link>
       </div>
 
