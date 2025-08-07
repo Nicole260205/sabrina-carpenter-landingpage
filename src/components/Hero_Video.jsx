@@ -1,12 +1,13 @@
 import hero from "../assets/music_video_hero.png";
+import '../styles/heroVideo.css'
 function Hero_Video() {
   return (
     <>
-      <div className="hero-discography-container">
+      <div className="hero-video-container">
         <img src={hero} alt="Sabrina Carpenter see herself in a mirror" />
-        <div className="overlay-text">
+        <div className="overlay-text-video">
           <h1>Music Videos</h1>
-          <div className="discography-text">
+          <div className="video-text">
             <p>
               <strong>Get ready for some serious visual magic.</strong> From raw
               acoustic sessions to full-on cinematic productions, these music
