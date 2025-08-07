@@ -1,23 +1,25 @@
-@import './fonts/fonts.css';
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
+@import "./fonts/fonts.css";
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap");
 
 :root {
-  --main-bg: #45092D; 
-  --light-bg: #FFF1E7;      
-  --accent-red: #C0123D;    
-  --text-dark: #2C2C2C;       
-  --highlight-gold: #F7C46C;  
+  --main-bg: #45092d;
+  --light-bg: #fff1e7;
+  --accent-red: #c0123d;
+  --text-dark: #2c2c2c;
+  --highlight-gold: #f7c46c;
 
-  --font-title: 'Birds of Paradise', cursive;
-  --font-text: 'Lora', serif;
+  --font-title: "Birds of Paradise", cursive;
+  --font-text: "Lora", serif;
 }
-html, body {
+html,
+body {
   height: 100%;
   font-family: var(--font-text);
   color: var(--text-dark);
   background-color: var(--highlight-gold);
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 * {

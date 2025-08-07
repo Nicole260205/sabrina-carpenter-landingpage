@@ -1,0 +1,160 @@
+.shop-now-container {
+  position: relative;
+  padding: 100px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-now-content {
+  margin-top: 190px;
+  max-width: 600px;
+  text-align: center;
+  z-index: 2;
+}
+
+.shop-now-content h2 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #45092d;
+}
+.shop-now-content h1 {
+  text-align: center;
+  font-family: "Birds of Paradise", cursive;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--main-bg);
+}
+
+.shop-now-content img {
+  width: 300px;
+  height: auto;
+}
+
+.shop-now-images {
+  position: absolute;
+  top: -0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  z-index: 1;
+}
+
+.shop-now-images.left {
+  left: 90px;
+  top: 90px;
+}
+
+.shop-now-images.right {
+  right: 70px;
+  top: 90px;
+}
+
+.shop-now-images img {
+  width: 200px;
+  height: auto;
+  opacity: 0.9;
+  transition: transform 0.3s ease;
+}
+
+/* Bagunçadinhos e rotacionados */
+.shop-now-images.left img:nth-child(1) {
+  transform: rotate(-15deg);
+}
+.shop-now-images.left img:nth-child(2) {
+  transform: rotate(10deg);
+}
+.shop-now-images.left img:nth-child(3) {
+  transform: rotate(-8deg);
+}
+.shop-now-images.left img:nth-child(4) {
+  transform: rotate(12deg);
+}
+.shop-now-images.left img:nth-child(5) {
+  transform: rotate(-5deg);
+}
+
+.shop-now-images.right img:nth-child(1) {
+  transform: rotate(15deg);
+}
+.shop-now-images.right img:nth-child(2) {
+  transform: rotate(-10deg);
+}
+.shop-now-images.right img:nth-child(3) {
+  transform: rotate(6deg);
+}
+.shop-now-images.right img:nth-child(4) {
+  transform: rotate(-12deg);
+}
+
+.footer-shop{
+  margin-top: 390px;
+}
+.footer-shop .paper-tear-footer {
+  top: -162px;
+}
+.footer-shop .footer-content {
+  padding: 0 2rem 0 2rem;
+}
+
+@media (max-width: 480px) {
+  .shop-now-container {
+    padding: 40px 5px;
+  }
+
+  .shop-now-content {
+    margin-top: 120px;
+    max-width: 50%;
+  }
+
+  .shop-now-content h2 {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+
+  .shop-now-content img {
+    width: 150px;
+  }
+
+  .shop-now-images {
+    top: 40px;
+    gap: 15px;
+  }
+
+  .shop-now-images img {
+    width: 100px;
+  }
+  .shop-now-images.left {
+    top: 120px;
+  }
+  .shop-now-images.right {
+    top: 120px;
+  }
+  /* Rotação ainda mais suave para telas muito pequenas */
+  .shop-now-images.left img:nth-child(1) {
+    transform: rotate(-8deg);
+  }
+  .shop-now-images.left img:nth-child(2) {
+    transform: rotate(5deg);
+  }
+  .shop-now-images.left img:nth-child(3) {
+    transform: rotate(-3deg);
+  }
+  .shop-now-images.left img:nth-child(4) {
+    transform: rotate(6deg);
+  }
+
+  .shop-now-images.right img:nth-child(1) {
+    transform: rotate(8deg);
+  }
+  .shop-now-images.right img:nth-child(2) {
+    transform: rotate(-5deg);
+  }
+  .shop-now-images.right img:nth-child(3) {
+    transform: rotate(3deg);
+  }
+  .shop-now-images.right img:nth-child(4) {
+    transform: rotate(-6deg);
+  }
+}
